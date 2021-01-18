@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./libraries/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="./styles/main.css" rel="stylesheet" type="text/css">
+    <title>Penjualan Bibit Ikan Air Tawar</title>
+  </head>
+  <body onload="onLoad()">
+    <script type='text/javascript' src="./libraries/jquery/jquery-3.5.1.min.js"></script>
+    <script type='text/javascript' src="./libraries/bootstrap/js/bootstrap.js"></script>
+    <script type='text/javascript' src="./scripts/main.js"></script>
+    <center>
+    <h1>Aplikasi Pembelian Bibit Ikan Air Tawar</h1>
+    </center>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <img src="images/ikan nila hitam.png" style="width:150px;height:150px;"/><br/>
+          <h4>Bibit Ikan Nila Hitam</h4><br/>
+          <label>Jumlah: <input type="number" id="jumlahNilaHitam" value="0" min="0" max="90000"/></label><br/>
+          <label>Stok: <input type="number" id="stokNilaHitam" readonly/></label><br/>
+          <label>Harga:</label><label id="htmlHargaNilaHitam"></label><br/>
+          <Label>Total: <input type="text" id="hargaNilaHitam" readonly/></Label>
+        </div>
+        <div class="col-sm">
+          <img src="images/ikan nila merah.png" style="width:150px;height:150px;"/><br/>
+          <h4>Bibit Ikan Nila Merah</h4><br/>
+          <label>Jumlah: <input type="number" id="jumlahNilaMerah" value="0" min="0" max="30000"/></label><br/>
+          <label>Stok: <input type="number" id="stokNilaMerah" readonly/></label><br/>
+          <label>Harga:</label><label id="htmlHargaNilaMerah"></label><br/>
+          <Label>Total: <input type="text" id="hargaNilaMerah" readonly/></Label>
+        </div>
+        <div class="col-sm">
+          <img src="images/ikan nila gesit.png" style="width:150px;height:150px;"/><br/>
+          <h4>Bibit Ikan Nila Gesit</h4><br/>
+          <label>Jumlah: <input type="number" id="jumlahNilaGesit" value="0" min="0" max="100000"/></label><br/>
+          <label>Stok: <input type="number" id="stokNilaGesit" readonly/></label><br/>
+          <label>Harga:</label><label id="htmlHargaNilaGesit"></label><br/>
+          <Label>Total: <input type="text" id="hargaNilaGesit" readonly/></Label>
+        </div>
+      </div>
+    </div><br/>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <img src="images/ikan lele mutiara.png" style="width:150px;height:150px;"/><br/>
+          <h4>Bibit Ikan Lele Mutiara</h4><br/>
+          <label>Jumlah: <input type="number" id="jumlahLeleMutiara" value="0" min="0" max="200000"/></label><br/>
+          <label>Stok: <input type="number" id="stokLeleMutiara" readonly/></label><br/>
+          <label>Harga:</label><label id="htmlHargaLeleMutiara"></label><br/>
+          <Label>Total: <input type="text" id="hargaLeleMutiara" readonly/></Label>
+        </div>
+        <div class="col-sm">
+          <img src="images/ikan lele patin.png" style="width:150px;height:150px;"/><br/>
+          <h4>Bibit Ikan Lele Patin</h4><br/>
+          <label>Jumlah: <input type="number" id="jumlahLelePatin" value="0" min="0" max="30000"/></label><br/>
+          <label>Stok: <input type="number" id="stokLelePatin" readonly/></label><br/>
+          <label>Harga:</label><label id="htmlHargaLelePatin"></label><br/>
+          <Label>Total: <input type="text" id="hargaLelePatin" readonly/></Label>
+        </div>
+        <div class="col-sm">
+          <img src="images/ikan lele sangkuriang.png" style="width:150px;height:150px;"/><br/>
+          <h4>Bibit Ikan Lele Sangkuriang</h4><br/>
+          <label>Jumlah: <input type="number" id="jumlahLeleSangkuriang" value="0" min="0" max="10000"/></label><br/>
+          <label>Stok: <input type="number" id="stokLeleSangkuriang" readonly/></label><br/>
+          <label>Harga:</label><label id="htmlHargaLeleSangkuriang"></label><br/>
+          <Label>Total: <input type="text" id="hargaLeleSangkuriang" readonly/></Label>
+        </div>
+      </div>
+    </div><br/>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <img src="images/ikan gurame batu.png" style="width:150px;height:150px;"/><br/>
+          <h4>Bibit Ikan Gurame Batu</h4><br/>
+          <label>Jumlah: <input type="number" id="jumlahGurameBatu" value="0" min="0" max="20000"/></label><br/>
+          <label>Stok: <input type="number" id="stokGurameBatu" readonly/></label><br/>
+          <label>Harga:</label><label id="htmlHargaGurameBatu"></label><br/>
+          <Label>Total: <input type="text" id="hargaGurameBatu" readonly/></Label>
+        </div>
+        <div class="col-sm">
+          <img src="images/ikan gurame padang.png" style="width:150px;height:150px;"/><br/>
+          <h4>Bibit Ikan Gurame Padang</h4><br/>
+          <label>Jumlah: <input type="number" id="jumlahGuramePadang" value="0" min="0" max="5000"/></label><br/>
+          <label>Stok: <input type="number" id="stokGuramePadang" readonly/></label><br/>
+          <label>Harga:</label><label id="htmlHargaGuramePadang"></label><br/>
+          <Label>Total: <input type="text" id="hargaGuramePadang" readonly/></Label>
+        </div>
+        <div class="col-sm">
+          <img src="images/ikan gurame baster.png" style="width:150px;height:150px;"/><br/>
+          <h4>Bibit Ikan Gurame Baster</h4><br/>
+          <label>Jumlah: <input type="number" id="jumlahGurameBaster" value="0" min="0" max="3000"/></label><br/>
+          <label>Stok: <input type="number" id="stokGurameBaster" readonly/></label><br/>
+          <label>Harga:</label><label id="htmlHargaGurameBaster"></label><br/>
+          <Label>Total: <input type="text" id="hargaGurameBaster" readonly/></Label>
+        </div>
+      </div>
+    </div><br/>
+    <center>
+    <h3>Data Pembeli</h3><br/>
+    <Label>Nama: <input type="text" id="namaInput"/></Label><br/>
+    <Label>Alamat: <input type="text" id="alamatInput"/></Label><br/>
+    <input type="button" onclick="pesanBibit()" value="Pesan" class="btn btn-primary"></input>
+    </center>
+    <br>
+    <label><b>Nama: </b></label><label id="namaOutput"></label><br>
+    <label><b>Alamat: </b></label><label id="alamatOutput"></label><br>
+    <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">No</th>
+          <th scope="col">Bibit Ikan</th>
+          <th scope="col">Jumlah Bibit</th>
+          <th scope="col">Total Harga</th>
+        </tr>
+      </thead>
+      <tbody id="tabelHasil">
+        <tr>
+          <th></th>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th></th>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th></th>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+    <label>Total: <input type="number" id="totalSemua"/></label><br>
+    <label>Bayar: <input type="number" id="bayar"/></label><button onclick="hitungPembayaran()">Bayar</button><br>
+    <label>Kembalian: <input type="number" id="kembalian"/></label><br/>
+  </body>
+</html>
